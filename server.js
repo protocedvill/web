@@ -3,8 +3,8 @@ const fs = require('fs');
 const url = require('url');
 
 const options = {
-  key: fs.readFileSync('./cert/key.pem'),
-  cert: fs.readFileSync('./cert/cert.pem')
+  key: fs.readFileSync('./cred/key.pem'),
+  cert: fs.readFileSync('./cred/cert.pem')
 };
 
 https.createServer(options, function (req, res) {
